@@ -42,7 +42,7 @@ export const Input = styled.input`
   padding: 10px;
   box-sizing: border-box;
   font-size: 1.2rem;
-  color: #312F2F;
+  color: #fff;
 `
 
 export const ColumnsTask = styled.div`

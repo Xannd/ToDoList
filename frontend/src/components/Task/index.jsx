@@ -33,7 +33,7 @@ function TaskComponent({data, getAll}){
             <Task>
                 <Stripe color={data?.status == 'Pending' ? '#5ba4cf' : data?.status == 'In progress' ? '#ffa600' : '#7bc86c'}/>
                 <Text>
-                    {editFieldTask ? <TextArea onChange={(e)=> setTitleStatus(e.target.value)} /> : data?.title}
+                    {editFieldTask ? <TextArea onChange={(e)=> setTitleStatus(e.target.value)} >{data?.title}</TextArea> : data?.title}
                     <ButtonEdit title="Edit task" onClick={()=> setEditFieldTask(!editFieldTask)}>
                         <AiFillEdit style={{width:'20px',height:'20px'}}/>
                     </ButtonEdit>
